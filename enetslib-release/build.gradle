@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('enetslib-release_1.2.1.aar'))

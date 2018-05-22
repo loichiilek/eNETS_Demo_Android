@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chiilek.nets_test.MainActivity">
+
+
+    <TextView
+        android:id="@+id/UMID"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="UMID: "
+        android:textAlignment="textEnd"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/UMID_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/UMID"
+        android:layout_alignBaseline="@id/UMID"
+        android:hint="UMID__877772003"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/TXN"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="txnAmt: "
+        android:textAlignment="textEnd"
+        android:layout_toEndOf="@id/UMID_value"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/TXN_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/TXN"
+        android:layout_alignBaseline="@id/UMID"
+        android:hint="1000"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/KEY_ID"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/UMID"
+        android:text="Key: "
+        android:textAlignment="textEnd"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/KEY_ID_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/KEY_ID"
+        android:layout_alignBaseline="@id/KEY_ID"
+        android:hint="154eb31c-0f72-45bb-9249-84a1036fd1ca"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/SECRET_KEY"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/KEY_ID"
+        android:text="S.Key: "
+        android:textAlignment="textEnd"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/SECRET_KEY_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/SECRET_KEY"
+        android:layout_alignBaseline="@id/SECRET_KEY"
+        android:hint="38a4b473-0295-439d-92e1-ad26a8c60279"
+        android:textSize="14sp"/>
+
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Default_Val"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/SECRET_KEY"
+        android:onClick="defaultVal"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Gen_Payload"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/SECRET_KEY"
+        android:onClick="genPayload"/>
+
+    <TextView
+        android:id="@+id/payload_title"
+        android:layout_below="@id/SECRET_KEY"
+        android:layout_marginTop="70dp"
+        android:text="Payload:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/SECRET_KEY"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="60dp"
+        android:text="send"
+        android:onClick="startPayment"/>
+
+    <EditText
+        android:id="@+id/payload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payload_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/hmac"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/payload"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/resp_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/SECRET_KEY"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
