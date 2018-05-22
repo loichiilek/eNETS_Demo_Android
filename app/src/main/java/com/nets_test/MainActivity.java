@@ -1,4 +1,4 @@
-package com.example.chiilek.nets_test;
+package com.nets_test;
 
 import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.nets_test.R;
 import com.nets.enets.exceptions.InvalidPaymentRequestException;
 import com.nets.enets.listener.PaymentCallback;
 import com.nets.enets.network.PaymentRequestManager;

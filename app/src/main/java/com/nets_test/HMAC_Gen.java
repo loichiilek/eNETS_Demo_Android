@@ -1,4 +1,4 @@
-package com.example.chiilek.nets_test;
+package com.nets_test;
 
 import android.util.Base64;
 import android.util.Log;

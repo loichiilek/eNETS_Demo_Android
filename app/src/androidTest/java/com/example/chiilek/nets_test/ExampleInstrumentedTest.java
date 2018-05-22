@@ -1,4 +1,4 @@
-package com.example.chiilek.nets_test;
+package com.nets_test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.chiilek.nets_test", appContext.getPackageName());
+        assertEquals("com.nets_test", appContext.getPackageName());
     }
 }
