@@ -59,10 +59,10 @@ Use 4111-1111-1111-1111, any future expiry date and and 3 digits security number
 **3. NETSPAY Option**
 
 Requires UAT version of [NETSPAY](https://api-developer.nets.com.sg/downloads/netspay2_0_39u_demo.zip)
+```
+<uses-permission android:name="com.nets.netspay.QR_TRANSACTION"/> <!-- Ensure you have this permission -->
+```
 
 ## Built With
 
 * [Android Studio 3.0.1](https://developer.android.com/studio/)
-```
-<uses-permission android:name="com.nets.netspay.QR_TRANSACTION"/> <!-- Ensure you have this permission -->
-```
