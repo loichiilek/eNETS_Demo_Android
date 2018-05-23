@@ -20,7 +20,7 @@ Take note of the additional permissions added.
         
 **2. build.gradle(Module: app)**
 
-A few additional dependencies are added, namely:
+A few additional dependencies, namely:
 
 ```
 implementation 'javax.xml.bind:jaxb-api:2.2.12'        
@@ -29,7 +29,7 @@ implementation project(':enetslib-release')
 ```         
 **3. MainActivity.java**
 
-Mainly for the calling of the method from within the additional SDK library. **Do include the library first.**
+Mainly for the calling of the method from within the additional SDK library. **Include the library first.**
 ```
 sendPaymentRequest(String key, String hmac, String txnReq, final PaymentCallback var4, final AppCompatActivity var5)
 ```
