@@ -1,4 +1,4 @@
-## eNETS_test_Android
+## eNETS_Demo_Android
 This repository will get you a copy of the project up and running on your local machine for development and testing purposes.
 **Does not** show interaction with merchant portal.
 
